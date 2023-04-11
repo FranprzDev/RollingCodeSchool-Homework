@@ -1,0 +1,11 @@
+Faltan las siguientes cosas:
+
+• Hacerlo responsive, sólo está diseñado para pantallas del tipo 1920x1080 
+• Animaciones (que funcionen con css)
+• Integración con JavaScript (Pop Ups, y algunas cositas de animaciones más avanzadas)
+• Hay algunos comentarios sobre cosas que quiero hacer, tipo sliders y demás.
+• Cambiar algunos iconos que no me terminan de convencer pero los puse a medio las "apuradas"
+	descubrí una nueva funcionalidad de la página de iconos, (icons8)
+
+Hasta ahí sería lo mío. De todos modos, dejo como se ve adjuntado en un PDF. 
+Estaré trabajando en hacerlo responsive. (Lo más primordial).

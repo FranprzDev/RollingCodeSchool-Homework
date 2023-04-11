@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #111;
+  /* display: area; */
+}
+
+.header {
+  position: fixed;
+  margin: 10px auto;
+  margin-left: 1.8vw;
+  /* border: red solid 1px; */
+  padding: 3px 3px 3px 3px;
+  height: 9vh;
+  width: 95vw;
+  display: block-inline;
+}
+
+.name {
+  color: red;
+  font-size: 35px;
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  align-items: center;
+}
+
+.img-logo {
+  height: 68px;
+  weight: 233px;
+}
+
+.name-and-image {
+  display: flex;
+  gap: 20px;
+  border: green solid 1px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.nav-bar {
+  justify-content: flex-end;
+  border: orange solid 1px;
+  display: flex;
+}
+
+.container-del-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 10px;
+}
+
+.nav-p {
+  color: #a1b0bf;
+  font-size: 35px;
+}
+
+.conteiner-header {
+  display: flex;
+  justify-content: space-around;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  color: #a1b0bf;
+}
+
+.introduction {
+  display: inline-block;
+  margin-left: 1.8vw;
+  height: 86vh;
+  width: 95.4vw;
+  border: green solid 1px;
+  margin-top: 13vh;
+}
+
+.portfolio {
+  color: gray;
+  display: none;
+}
+
+/* .rayitas-decorativas  {
+    border: lawngreen solid 1px;
+    display: block;
+    transform: all ease-in-out;
+    position: absolute;
+    transform: rotate('60deg')
+}
+
+.flex-rayas {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.rayita {
+    margin: 5px 5px 5px 5px;
+    background-color: lightblue;
+    height: 25px;
+    width: 200px;
+}
+
+.caja-rotacion {
+    transform: rotate(-163deg);
+} */
+
+.primera-parte {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.presentation {
+  width: 850px;
+  height: 45px;
+  display: block;
+  /* H2 Bold */
+  text-align: center;
+
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+
+  background: linear-gradient(180deg, #fffefe 0%, #fe3051 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.parrafo {
+  display: block;
+  position: relative;
+  width: 750px;
+  height: 50px;
+
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #a1b0bf;
+}
+
+.container-de-tarjetitas {
+  height: 65vh;
+  width: 90vw;
+  padding: 10px 10px 10px 10px;
+  margin: 30px 10px 10px 40px;
+  border: blueviolet solid 3px;
+  position: relative;
+}
+
+.tarjetitas {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  /* este align content debería de estar mandandome 
+    todo al mismo lugar, es decir todo al medio de la 
+    caja violeta pero no lo está haciendo xd */
+  gap: 50px;
+  column: center;
+}
+
+.tarjeta {
+  position: relative;
+  width: 1145px;
+  height: 385px;
+  left: 0px;
+  top: 0px;
+  border: green solid 1px;
+  border-radius: 15%;
+  background-color: #181717;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.h3 {
+  position: absolute;
+  width: 130px;
+  height: 25px;
+  left: 40px;
+  top: 15px;
+
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 23px;
+
+  background: linear-gradient(180deg, #ff6079 0%, #fe3051 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+}
+
+.default-title{
+    text-align: center;
+    position: absolute;
+    width: 222px;
+    height: 46px;
+    left: 30px;
+    top: 40px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    
+}

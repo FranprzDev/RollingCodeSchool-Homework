@@ -1,0 +1,85 @@
+.lato-font {
+    font-family: 'Lato', sans-serif;
+}
+
+.oswald-font {
+    font-family: 'Oswald', sans-serif;
+}
+
+.rect-corner {
+    border-radius: 0;
+}
+
+.box {
+    background-color: coral;
+    height: 80px;
+    border: 6px solid white;
+}
+
+.overlay-wrapper {
+    position: relative;
+    z-index: 100;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #ffc107;
+    top: 0;
+    left: 0;
+    opacity: .4;
+}
+
+.square-wrapper::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: -55px;
+    left: -15px;
+    background-color: #ffc107;
+    width: 90px;
+    height: 70px;
+    z-index: 0;
+}
+
+.square-2::after {
+    content: "";
+    display: block;
+    position: relative;
+    left: 85%;
+    top: -60px;
+    background-color: #ffc107;
+    width: 90px;
+    height: 70px;
+    z-index: 3; 
+}
+
+.debug {
+    border: 1px solid black;
+}
+
+.custom-card {
+    background-color: transparent;
+    border: none;
+}
+
+.custom-card-img {
+    border: 1.5px solid white;
+    border-radius: 0;
+}
+
+.custom-card-img-animal {
+    border: 3px solid wheat;
+    border-radius: 0;
+}
+
+.animalTitle {
+    font-size: 40px;
+}
+
+.contact {
+    height: 35px;
+    width: 35px;
+    border-radius: 75px;
+}

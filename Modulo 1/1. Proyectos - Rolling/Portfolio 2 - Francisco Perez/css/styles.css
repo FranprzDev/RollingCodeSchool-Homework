@@ -1,0 +1,498 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+      background-color: #111111;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 15%;
+    max-width: 100%;
+    position: relative;
+    bottom: 10px;
+}
+
+.header__left--myname {
+    visibility: hidden;
+}
+
+.header__left{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    width: 70%;
+    height: 80%;
+}
+
+.header__left--myimage{
+    width: 30%;
+    height: 100%;
+}
+
+.header-nav__right__list{
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+}
+
+.header-nav__right{
+    display: flex;
+    width: 30%;
+    height: 80%;
+    bottom: 13px;
+    position: relative;
+}
+
+.header-nav__right__list__item {
+    width: 42px;
+    height: 23px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 23px;
+    color: #A1B0BF;
+    position: relative;
+    right: 50px;
+}
+
+.home {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+    top: 30px;
+}
+
+.home__div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.titulosGeneral {
+    position: relative;
+    height: 50px;
+
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 15px;
+    text-align: center;
+    padding: 15px;
+    bottom: 10px;
+    
+    background: linear-gradient(180deg, #FFFEFF 0%, #FE667E 73.96%, #FE3051 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.ancle {
+    all: unset;
+    text-decoration: none;
+}
+
+.home__div__name__text{
+    position: relative;
+    text-align: center;
+    top: 10px;
+    width: 800px;
+    height: 80px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    color: #A1B0BF;
+}
+
+.italic-letter {
+    font-size: 28px;
+    color: #c5ced7;
+}
+
+.home__technology {
+    position: relative;
+    display: flex;
+    align-items: space-around;
+    justify-content: center;
+    gap: 80px;
+    width: 100%;
+    top: 100px;
+    /* left: 40px; */
+    /* AQUI ESTE LEFT ME BUGEA TODO XD */
+}
+
+.home__technology_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 15px;
+    
+    position: relative;
+    width: 353px;
+    height: 385px;
+    
+    background: #0A0A0A;
+    border-radius: 75px;
+}
+
+.technology {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 40px;
+    
+    background: linear-gradient(180deg, #FF6079 0%, #FE3051 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.title {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    color: #FFFFFF;
+    position: relative;
+    left: 30px;
+    top: 5px;
+}
+
+.list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+    top: 30px;
+    left: 60px;
+}
+
+.list__item {
+    position: relative;
+
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #A1B0BF;
+}
+
+.check {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    font-weight: 700;
+    right: 10px;
+    background: linear-gradient(180deg, #FF6079 0%, #FE3051 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+}
+
+.aboutme_wrapper {
+    height: 95%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;    
+    top: 20px;
+    position: relative;
+}
+
+.aboutme__container-left {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.img_defaultconfig {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    top: 30px;
+}
+
+.aboutme__container-right {
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column; 
+    align-items: flex-start;
+    box-sizing: content-box; 
+}
+
+.paragraph {
+    position: relative;
+    top: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 35px;
+    color: #A1B0BF;
+    box-sizing: content-box;
+}
+
+.important_aspect {
+    color: #d5dce2;
+}
+
+.aboutme__container-left__skills {
+    position: relative;
+    right: 40px;
+    height: 40%;
+    top: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 0px;
+}
+
+.skills__programming {
+    position: relative;
+    top: 30px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    height: 50%;
+}
+
+/* Aquí me gustaria que aparezcan todos pero por lo visto 
+    no estoy encontrnado otra solucion que hacerlo
+    con un evento de js que se desplieguen las habilidades xd
+*/
+
+.change_skills {
+    position: relative;
+    bottom: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.button_change {
+    all: unset;
+    text-align: center;
+    color: #FE3051;
+    border: 2px solid #A1B0BF;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 35px;
+    width: 30%;
+}
+
+.myProject {
+    position: relative;
+    top: 35px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.myProject-right {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.myProject-left {
+    display: grid;
+    grid-template-rows:  repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 70px;
+    grid-row-gap: 50px;
+}
+
+.cardProject {
+    position: relative;
+    width: 350px;
+    height: 250px;
+    
+    background: #0A0A0A;
+    border-radius: 75px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 20px; */
+}
+
+.nameProject {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    line-height: 5px;
+    text-align: center;
+    padding: 15px;
+    bottom: 10px;
+    
+    background: linear-gradient(180deg, #FFFEFF 0%, #FE667E 73.96%, #FE3051 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.imgProject {
+    position: relative;
+    width: 70%;
+    height: 70%;
+}
+
+.enlaceProject {
+    position: relative;
+    bottom: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 30px;
+}
+
+.contact-me {
+    position: relative;
+    top: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    max-width: 100vw;
+    height: 100vh;
+}
+
+.contact-me__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-me__right {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-column-gap: 10%;
+    height: 80%;
+    width: 90%;
+}
+
+.contact-me__right-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-me__right__forms {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.inputform {
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    padding: 5px;
+}
+
+.formcontact {
+    height: 100px;
+}
+
+.contact-me__right__redes  {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-paragraph {
+    position: relative;
+    bottom: 100px;
+}
+
+.footer  {
+    position: relative;
+    top: 50px;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(132deg, rgba(0,0,0,1) 35%, rgba(99,111,124,1) 45%, rgba(99,111,124,1) 55%, rgba(0,0,0,1) 65%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_paragraph {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 35px;
+    color: #92A3B3;
+}
+
+.svg {
+    z-index: -1;
+}

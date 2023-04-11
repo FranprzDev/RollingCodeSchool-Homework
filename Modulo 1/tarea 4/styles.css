@@ -1,0 +1,108 @@
+body {
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+
+#tituloPrincipal{
+    font-size: 3em;
+    padding-bottom: 0%;
+}
+
+.anclaje{
+    background-color: beige;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.h3{
+    padding:  0, 0, 0, 0;
+    font-size: 1.7em;
+    font-style: italic;
+    text-align: center;
+}
+
+.parrafo {
+    padding-left: 2em;
+    font-size: 1.15em;
+}
+
+.listaLenguajes {
+    padding-left: 10em;
+    font-size: 1.3em;
+}
+
+.clanguage {
+    color: purple;
+}
+
+#java {
+    color: red;   
+}
+
+#js {
+    color: yellowgreen;
+}
+
+#py {
+    color: cyan;
+}
+
+#php {
+    color: blue;
+}
+
+#swift {
+    color: orange;  
+}
+
+.img {
+    text-align: center;
+    
+}
+
+#imp {
+    color: red;
+}
+
+.resaltar {
+    color: red;
+    text-align:  center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#imgc {
+    height: 28em;
+    width: 28em;
+}
+
+#listaDesventajas {
+    padding-left: 3em;
+    font-size: 1.3em;
+    color: red;
+}
+
+.aprende {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: rgb(67, 243, 97);
+}
+
+#formulario {
+    text-align: center;
+    color:brown;
+}
+
+#final {
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: powderblue;
+    text-align: center;
+}

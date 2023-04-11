@@ -1,0 +1,20 @@
+.perso-button {
+    background-color: #dc392d;
+    border-radius: 30px;
+}
+
+.colorBackground {
+    color: #a6224a;
+}
+
+.box {
+    background-color: #dc392d;
+    height: 5px;
+    width: 30%;
+}
+
+.background-image {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./background.png);
+}

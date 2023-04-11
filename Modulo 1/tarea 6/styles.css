@@ -1,0 +1,136 @@
+body {
+    background-color: rgba(128, 128, 128, 0.29);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#42ed0e, #0f330462);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.myName {
+    font-size: 32px;
+    background: -webkit-linear-gradient(#ee141474, #ee1414);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.componentName {
+    font-size: 32px;
+    background: -webkit-linear-gradient(#ee141474, #ee1414);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+.primerComponente {
+    position: relative;
+    top: 50px;
+    height: 90%;
+}
+
+
+.paragraph {
+    font-size: 25px;
+    top: 200px;
+}
+
+.flexing-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.vs {
+    font-size: 25px;
+    color:  rgb(245, 81, 81);
+}
+
+.loss_result {
+    color: rgb(255, 0, 0);
+}
+
+.win_result {
+    color: rgb(74, 233, 74);
+}
+
+
+.empate_result {
+    color: rgb(88, 82, 82);
+}
+
+.position {
+    position: relative;
+    top: 10px;
+}
+
+.allspace {
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.abajoSlider  {
+    position: relative;
+    top: 50px;
+}
+
+.segundaSeccion {
+    position: relative;
+    top: 100px;
+    bottom: 250px;
+}
+
+.resultado {
+    position: relative;
+    top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px; /*  NO SE PORQUE ESTOS BOTONES NO ME RECONOCEN LA PROPIEDAD GAP... */
+}
+
+.primerBoton {
+    position: relative;
+    bottom: 20px;
+}
+
+.modifcacionBoton {
+    background-color: rgb(206, 200, 200);
+    color: rgb(104, 104, 235);
+    position: relative;
+    top: 30px;
+    bottom: 20px;
+    height: 50px;
+    width: 500px;
+}
+
+.firstButton {
+     position: relative;
+     top: 20px !important; /* uso el importante porque si no , no puedo darle separacion a los botones :Ss */
+}
+
+.terceraSeccion {
+    position: relative;
+    top: 200px;
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/* Aquí importante que se le de el width del 100%, porque si no pasa que no lo reconoce.*/
