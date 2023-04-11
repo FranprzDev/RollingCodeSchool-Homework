@@ -5,7 +5,7 @@ Here you can see resources about the Full Stack Course I am taking right now.
 This courses it's a scolarship in the company RollingCode School.
 
 
-## Plan de estudios
+## Syllabus
 
 - Module 1: HTML - CSS -> BOOTSTRAP [✅] 
 
