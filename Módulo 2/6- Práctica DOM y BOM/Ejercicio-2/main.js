@@ -52,40 +52,12 @@ class Persona {
             anioNac: ${this.anioNac} 
         `)
     }
-    
 }
-
-// Lugar donde obtengo los valuves
-
-let nombreInput = document.getElementById('nombreInput')
-let edadInput = document.getElementById('edad')
-let dniInput = document.getElementById('dniInput')
-let sexoInput = document.getElementById('elegirSexo')
-let pesoInput = document.getElementById('pesoInput')
-let alturaInput = document.getElementById('altura')
-let anioNac = document.getElementById('anioNac')
-let crearPersona = document.getElementById('crearPersona')
-
-let listaPersonas = []
-
-// obtengo las variables para crear el objeto
-
-// function aniadirPersona(objeto){
-//     listaPersonas.push(objeto);
-
-//     document.innerHtml = '
-//         <div class="card-body">
-//             <h5 class="card-title">Nombre Perosna</h5>
-//             <p class="card-text">
-//             Edad: $     DNI: $  Sexo: $ 
-//             Peso: $  Altura: $   Año Nacimiento: $  
-//             </p>
-//         </div>
-//     '
-// }
-
-// Esta función debería añadir un nodo para ir añadiendo la gente que exista en el array Lista Personas para que así se vaya poniendo de manera dinámica.
-function crearObjeto() {
+    
+// FUNCIONES
+function crearObjeto(event) {
+    console.log("se envio")
+    event.preventDefault();
     let nombreObj = nombreInput.value
     let edadObj = edadInput.value
     let dniObj = dniInput.value
@@ -96,12 +68,67 @@ function crearObjeto() {
 
     // esto se lo paso al constructor para crear el objeto...
     let persona = new Persona(nombreObj, edadObj, dniObj, sexoObj, pesoObj, alturaObj, anioNacObj);
-
-    aniadirPersona();
+    console.log("aniadir");
+    aniadirPersona(objeto);
 }
 
+function aniadirPersona(objeto){
+    listaPersonas.push(objeto);
+
+    const myNode = document.getElementById('contenedorPersonas');
+    myNode.innerHTML = `
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Nombre Persona</h5>
+          <p class="card-text">
+            Edad: ${objeto.nombreObj} DNI: ${objeto.dniObj} Sexo: ${objeto.sexoObj} 
+            Peso: ${objeto.pesoObj} Altura: ${objeto.alturaObj} Año Nacimiento: ${objeto.nacimientoObj} 
+          </p>
+        </div>
+      </div>
+    `;
+    console.log("se aniadio");
+    // con esto añado el nodo al html  y listo
+}
+
+// Esta función debería añadir un nodo para ir añadiendo la gente que exista en el array Lista Personas para que así se vaya poniendo de manera dinámica.
 
 
-crearPersona.addEventListener('click', crearObjeto);
+// Values
 
+let nombreInput = document.getElementById('nombreInput')
+let edadInput = document.getElementById('edad')
+let dniInput = document.getElementById('dniInput')
+let sexoInput = document.getElementById('elegirSexo')
+let pesoInput = document.getElementById('pesoInput')
+let alturaInput = document.getElementById('altura')
+let anioNac = document.getElementById('anioNac')
+let crearPersona = document.getElementById('crearPersona')
+let personas = document.getElementsByTagName('contenedorPersonas')
+let formEnviar = document.getElementById('formObj')
 
+let listaPersonas = []
+
+// addEvent
+
+formEnviar.addEventListener('submit', (event) => {
+    event.preventDefault();
+    console.log("se envio")
+
+    let nombreObj = document.getElementById('nombreInput').value
+    let edadObj = document.getElementById('edad').value
+    let dniObj = document.getElementById('dniInput').value
+    let sexoObj = document.getElementById('elegirSexo').value
+    let pesoObj = document.getElementById('pesoInput').value
+    let alturaObj =  document.getElementById('altura').value
+    let anioNacObj = document.getElementById('anioNac').value
+
+    // esto se lo paso al constructor para crear el objeto...
+    let persona = new Persona(nombreObj, edadObj, dniObj, sexoObj, pesoObj, alturaObj, anioNacObj);
+    console.log("aniadir");
+    aniadirPersona(objeto);
+
+});
+
+// no me lee loas cosas y no  entiendo porque
+// pero debería de funcionar..
