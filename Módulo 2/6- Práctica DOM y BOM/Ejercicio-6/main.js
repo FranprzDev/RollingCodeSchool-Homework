@@ -26,7 +26,7 @@ const minutos = document.getElementById('minForm')
 const iniciar = document.getElementById("iniciar");
 const pausar = document.getElementById("pausar");
 const reiniciar = document.getElementById("reiniciar");
-const cargarDatos = document.getElementById('cargarDatos')
+const reanudar = document.getElementById("reanudar");
 
 // variables
 let intervalo
@@ -38,15 +38,6 @@ let segundos
 //   minutos.removeAttribute("disabled");
 // }
 
-cargarDatos.addEventListener('click', (e) =>{
-    if(minutos.value == 0){
-        alert('Debes ingresar un tiempo en minutos.')
-    }else{
-        e.preventDefault()
-        segundos = parseInt(minutos.value)*60
-    }
-
-})
 
 iniciar.addEventListener('click', (e) => {
 
@@ -80,4 +71,10 @@ reiniciar.addEventListener('click', (e) =>  {
   
     parentNode.innerHTML = "";
     parentNode.appendChild(newNode);
+})
+
+reanudar.addEventListener('click', (e) =>  {
+    e.preventDefault()
+    intervalo = setInterval(decrementarSegundos,1000)
+
 })
