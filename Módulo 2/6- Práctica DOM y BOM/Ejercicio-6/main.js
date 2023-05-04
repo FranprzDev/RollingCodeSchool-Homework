@@ -32,6 +32,12 @@ const cargarDatos = document.getElementById('cargarDatos')
 let intervalo
 let segundos
 
+// if (minutos.value == 0) {
+//   minutos.setAttribute("disabled", "");
+// } else {
+//   minutos.removeAttribute("disabled");
+// }
+
 cargarDatos.addEventListener('click', (e) =>{
     if(minutos.value == 0){
         alert('Debes ingresar un tiempo en minutos.')
@@ -43,11 +49,13 @@ cargarDatos.addEventListener('click', (e) =>{
 })
 
 iniciar.addEventListener('click', (e) => {
+
     if(minutos.value == 0){
         alert('Debes ingresar un tiempo en minutos.')
     }else{
         e.preventDefault();
-    
+        
+        segundos = parseInt(minutos.value)*60
         intervalo = setInterval(decrementarSegundos,1000)
     }
 })
