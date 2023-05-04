@@ -2,7 +2,6 @@
 4- Crear una web con un reloj que muestre la siguiente información:
 
 */
-
 let fecha = new Date();
 
 let dias = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
