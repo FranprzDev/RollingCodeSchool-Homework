@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 export default function Card(props) {
+    
     const [toggle, setToggle] = useState(false);
     const [index, setIndex] = useState(0)
     
@@ -20,7 +21,6 @@ export default function Card(props) {
           });
       }
     };
-      
 
     return (
         <div className="container my-2">

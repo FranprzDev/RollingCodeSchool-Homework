@@ -1,11 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import Card from './Component/Card'
-import backgroundSvg from './assets/pattern.svg';
 
 function App() {
-  const [lista, setLista] = useState([]);
+  const [lista, setLista] = useState(() => {
+    const almacenadoLocal = localStorage.getItem('tasks');
+    const almacenadoLocalParseado = JSON.parse(almacenadoLocal)
+    
+    return almacenadoLocalParseado || ""
+  });
   const [task, setTask] = useState('');
-  const [description, setDescription] = useState('');
+  
+  useEffect(() => {
+    localStorage.setItem('tasks', JSON.stringify(lista));
+  }, [lista]);
+
 
   const buttonStyle = {
     background: 'linear-gradient(to bottom, #be99e2, #8a36bd)',
@@ -31,10 +39,6 @@ function App() {
     setTask('');
   };
 
-  useEffect(() => {
-    console.log(lista);
-  }, [lista]);
-
   const handleCleanForm = () => {
     setLista([])
   }
@@ -47,8 +51,6 @@ function App() {
     setLista(updatedLista);
     // console.log(lista)
   }
-
-
 
   return (
     <div className="container">

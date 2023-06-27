@@ -1,0 +1,28 @@
+.btn-custom {
+    background-color: rgba(225, 223, 82, 0.665);
+    color: #e9eab5;
+}
+
+.buttonCollapse {
+    display: block
+}
+
+#avatarImg {
+    width: 100px;
+    height: 120px;
+    background-color: transparent;
+}
+
+.custom-card {
+    background-color: rgb(241, 241, 107);
+    border: 1px solid #e9b83d;
+}
+
+.custom-container  {
+    background: rgb(240,186,42);
+    background: radial-gradient(circle, rgba(240,186,42,1) 25%, rgba(140,127,8,1) 65%, rgba(176,147,5,1) 70%);
+}
+
+.btn-send-custom {
+    background: #fff;
+}
